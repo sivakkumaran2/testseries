@@ -1,0 +1,204 @@
+{
+    
+    "time": "10:00",
+    "languages": [
+      {"code": "en", "name": "English"},
+      {"code": "ta", "name": "Tamil"}
+    ],
+
+      "subjects": [
+        {"id": "id1", "name": "Tamil"},
+        {"id": "id2", "name": "Maths"},
+        {"id": "id3", "name": "English"},
+        {"id": "id4", "name": "Science"}
+       
+      ],
+      "questions": [
+        {
+          "id": 1,
+          "question_en": "Who invented the calculator?",
+          "question_ta": "கால்குலேட்டரை கண்டுபிடித்தவர் யார்?",
+             "options_en": [
+            {"id": 1, "text": "Pascal"},
+            {"id": 2, "text": "Neelakiri"},
+            {"id": 3, "text": "Tahir"},
+            {"id": 4, "text": "Mann"}
+          ],
+          "options_ta": [
+            {"id": 1, "text": "பாஸ்கள்"},
+            {"id": 2, "text": "நீலகிரி"},
+            {"id": 3, "text": "தாஹிர்"},
+            {"id": 4, "text": "மான்"}
+          ],
+          "answer": 1
+        },
+        
+        {
+          "id": 2,
+          "question_en": "Which country's flag do you use?",
+          "question_ta": "நீங்கள் எந்த நாட்டின் கொடியைப் பயன்படுத்துகிறீர்கள்?",
+          "options_en": [
+            {"id": 1, "text": "Sri Lanka"},
+            {"id": 2, "text": "America"},
+            {"id": 3, "text": "India"},
+            {"id": 4, "text": "Russia"}
+          ],
+          "options_ta": [
+            {"id": 1, "text": "இலங்கை"},
+            {"id": 2, "text": "அமெரிக்கா"},
+            {"id": 3, "text": "இந்தியா"},
+            {"id": 4, "text": "ரஷ்யா"}
+          ],
+          "answer": 3
+        },
+        {
+          "id": 3,
+          "question_en": "What is the capital of France?",
+          "question_ta": "பிரான்சின் தலைநகரம் என்ன?",
+          "options_en": [
+            {"id": 1, "text": "Paris"},
+            {"id": 2, "text": "London"},
+            {"id": 3, "text": "Berlin"},
+            {"id": 4, "text": "Madrid"}
+          ],
+          "options_ta": [
+            {"id": 1, "text": "பாரிஸ்"},
+            {"id": 2, "text": "லண்டன்"},
+            {"id": 3, "text": "பெர்லின்"},
+            {"id": 4, "text": "மாட்ரிட்"}
+          ],
+          "answer": 1
+        },
+        {
+          "id": 4,
+          "question_en": "Who wrote 'Macbeth'?",
+          "question_ta": "'மக்பெத்' யார் எழுதியது?",
+          "options_en": [
+            {"id": 1, "text": "Shakespeare"},
+            {"id": 2, "text": "Hemingway"},
+            {"id": 3, "text": "Tolstoy"},
+            {"id": 4, "text": "Dickens"}
+          ],
+          "options_ta": [
+            {"id": 1, "text": "ஷேக்ஸ்பியர்"},
+            {"id": 2, "text": "ஹெமிங்"},
+            {"id": 3, "text": "தொல்ஸ்டாய்"},
+            {"id": 4, "text": "டிக்கென்ஸ்"}
+          ],
+          "answer": 1
+        },
+        {
+          "id": 5,
+          "question_en": "Which planet is known as the Red Planet?",
+          "question_ta": "சிவப்பு கோள் என்று அழைக்கப்படும் கோள் எது?",
+          "options_en": [
+            {"id": 1, "text": "Mars"},
+            {"id": 2, "text": "Jupiter"},
+            {"id": 3, "text": "Saturn"},
+            {"id": 4, "text": "Venus"}
+          ],
+          "options_ta": [
+            {"id": 1, "text": "செவ்வாய்"},
+            {"id": 2, "text": "வியாழன்"},
+            {"id": 3, "text": "சனி"},
+            {"id": 4, "text": "சுக்கிரன்"}
+          ],
+          "answer": 1
+        },
+        {
+          "id": 6,
+          "question_en": "What is the chemical symbol for water?",
+          "question_ta": "நீரின் வேதியியல் குறியீடு என்ன?",
+          "options_en": [
+            {"id": 1, "text": "H2O"},
+            {"id": 2, "text": "O2"},
+            {"id": 3, "text": "CO2"},
+            {"id": 4, "text": "NaCl"}
+          ],
+          "options_ta": [
+            {"id": 1, "text": "H2O"},
+            {"id": 2, "text": "O2"},
+            {"id": 3, "text": "CO2"},
+            {"id": 4, "text": "NaCl"}
+          ],
+          "answer": 1
+        },
+        {
+          "id": 7,
+          "question_en": "Who is known as the Father of Computers?",
+          "question_ta": "கணினிகளின் தந்தை என்று அழைக்கப்படுபவர் யார்?",
+          "options_en": [
+            {"id": 1, "text": "Charles Babbage"},
+            {"id": 2, "text": "Alan Turing"},
+            {"id": 3, "text": "Bill Gates"},
+            {"id": 4, "text": "Steve Jobs"}
+          ],
+          "options_ta": [
+            {"id": 1, "text": "சார்லஸ் பாபேஜ்"},
+            {"id": 2, "text": "ஆலன் ட்யூரிங்"},
+            {"id": 3, "text": "பில் கேட்ஸ்"},
+            {"id": 4, "text": "ஸ்டீவ் ஜாப்ஸ்"}
+          ],
+          "answer": 1
+        },
+        {
+          "id": 8,
+          "question_en": "What is the largest ocean on Earth?",
+          "question_ta": "பூமியில் பெரிய கடல் எது?",
+          "options_en": [
+            {"id": 1, "text": "Atlantic Ocean"},
+            {"id": 2, "text": "Indian Ocean"},
+            {"id": 3, "text": "Pacific Ocean"},
+            {"id": 4, "text": "Arctic Ocean"}
+          ],
+          "options_ta": [
+            {"id": 1, "text": "அட்லாண்டிக் சமுத்திரம்"},
+            {"id": 2, "text": "இந்திய சமுத்திரம்"},
+            {"id": 3, "text": "பசிபிக் சமுத்திரம்"},
+            {"id": 4, "text": "ஆர்க்டிக் சமுத்திரம்"}
+          ],
+          "answer": 3
+        },
+        {
+          "id": 9,
+          "question_en": "What is the smallest unit of life?",
+          "question_ta": "வாழ்க்கையின் மிகச்சிறிய அலகு என்ன?",
+          "options_en": [
+            {"id": 1, "text": "Organ"},
+            {"id": 2, "text": "Cell"},
+            {"id": 3, "text": "Tissue"},
+            {"id": 4, "text": "Organism"}
+          ],
+          "options_ta": [
+            {"id": 1, "text": "உறுப்பு"},
+            {"id": 2, "text": "செல்"},
+            {"id": 3, "text": "திசு"},
+            {"id": 4, "text": "உயிரினம்"}
+          ],
+          "answer": 2
+        },
+       
+        {
+          "id": 10,
+          "question_en": "Who painted the Mona Lisa?",
+          "question_ta": "மோனா லிசாவைப் பார்த்தவர் யார்?",
+          "options_en": [
+            {"id": 1, "text": "Vincent van Gogh"},
+            {"id": 2, "text": "Pablo Picasso"},
+            {"id": 3, "text": "Leonardo da Vinci"},
+            {"id": 4, "text": "Claude Monet"}
+          ],
+          "options_ta": [
+            {"id": 1, "text": "வின்சென்ட் வான் கோக்"},
+            {"id": 2, "text": "பாப்லோ பிக்காசோ"},
+            {"id": 3, "text": "லியோனார்டோ டா வின்சி"},
+            {"id": 4, "text": "கிளாட் மோனெட்"}
+          ],
+          "answer": 3
+        }
+      ]
+      
+
+      }
+    
+    

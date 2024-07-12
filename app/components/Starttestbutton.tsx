@@ -7,9 +7,9 @@ const Starttestbutton = () => {
         window.open("/instructions", "mozillaWindow", "popup");
       };
   return (
-    <Link href="instructions">  
+    
       <Button onClick={handleStartTest}>Start Test</Button>
-    </Link> 
+    
   )
 }
 
