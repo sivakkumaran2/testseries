@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-import Header from '../../layout/Header'
+import Header from '../../components/Header'
 import Sidebar from '../../layout/sidebar';
 import { Button } from '@/components/ui/button';
 import { AiOutlineCheckCircle, AiOutlineCloseCircle } from 'react-icons/ai';

@@ -4,8 +4,8 @@ import data from '../data/data.json';
 import { Select, SelectTrigger, SelectValue, SelectContent, SelectGroup, SelectLabel, SelectItem } from '@/components/ui/select';
 
 const Language = () => {
-  const [language, setLanguage] = useState('en');
-  const languages = data?.languages || [];
+  const [language, setLanguage] = useState('en'); 
+  const { languages } = data;
 
   const handleLanguageSwitch = (languageCode: string) => {
     setLanguage(languageCode);
