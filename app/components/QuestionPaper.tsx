@@ -1,20 +1,20 @@
 "use client";
 import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-import Header from '../components/Header';
-import Sidebar from '../components/QuestionSidebar';
+import Header from './Header';
+import Sidebar from './QuestionSidebar';
 import { Button } from '@/components/ui/button';
 import { AiOutlineCheckCircle, AiOutlineCloseCircle } from 'react-icons/ai';
 import data from '../data/data2.json';
-import QuestionNo from '../components/QuestionNo';
-import Subject from '../components/Subject';
+import QuestionNo from './QuestionNo';
+import Subject from './Subject';
 
 export default function Home() {
   const router = useRouter();
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [timeLeft, setTimeLeft] = useState(600);
   const [language, setLanguage] = useState('en');
-  const { questions, subjects, time, languages } = data;
+  const { questions, languages } = data;
   const [questionStatus, setQuestionStatus] = useState(
     questions.map(() => ({ legend: 'notVisited' }))
   );

@@ -8,92 +8,155 @@
   "examInstructions": [
     {
       "number": 1,
-      "instruction": "The clock has been set at the server and the countdown timer at the top right corner of your screen will display the time remaining for you to complete the exam. When the clock runs out the exam ends by default - you are not required to end or submit your exam."
+      "instruction": {
+        "en": "The clock has been set at the server and the countdown timer at the top right corner of your screen will display the time remaining for you to complete the exam. When the clock runs out the exam ends by default - you are not required to end or submit your exam.",
+        "ta": "நேரம் சர்வரில் அமைக்கப்பட்டுள்ளது, மேலும் உங்கள் திரையின் மேல் வலது மூலையில் உள்ள கவுன்ட்டவுன் டைமர் தேர்வை முடிக்க நீங்கள் மீதமுள்ள நேரத்தை காட்டும். காட்சியானது முடிவுக்கு வரும் போது தேர்வு இயல்பாக முடிவடைகிறது - நீங்கள் தேர்வை முடிக்க அல்லது சமர்ப்பிக்க தேவையில்லை."
+      }
     },
     {
       "number": 2,
-      "instruction": "The question palette at the right of screen shows one of the following statuses of each of the questions numbered:"
+      "instruction": {
+        "en": "The question palette at the right of screen shows one of the following statuses of each of the questions numbered:",
+        "ta": "திரையின் வலது பக்கத்தில் உள்ள கேள்வி பாலெட் எண் கோடிடப்பட்ட ஒவ்வொரு கேள்வியின் பின்வரும் நிலைகளில் ஒன்றை காட்டுகிறது:"
+      }
     }
   ],
   "questionStatuses": [
     {
       "statusId": 1,
-      "description": "You have not visited the question yet."
+      "description": {
+        "en": "You have not visited the question yet.",
+        "ta": "நீங்கள் இன்னும் கேள்வியைப் பார்த்து முடிக்கவில்லை."
+      }
     },
     {
       "statusId": 3,
-      "description": "You have not answered the question."
+      "description": {
+        "en": "You have not answered the question.",
+        "ta": "நீங்கள் கேள்விக்கு பதிலளிக்கவில்லை."
+      }
     },
     {
       "statusId": 5,
-      "description": "You have answered the question."
+      "description": {
+        "en": "You have answered the question.",
+        "ta": "நீங்கள் கேள்விக்கு பதிலளித்துள்ளீர்கள்."
+      }
     },
     {
       "statusId": 7,
-      "description": "You have NOT answered the question but have marked the question for review."
+      "description": {
+        "en": "You have NOT answered the question but have marked the question for review.",
+        "ta": "நீங்கள் கேள்விக்கு பதிலளிக்கவில்லை, ஆனால் கேள்வியை மதிப்பீட்டுக்காக குறித்துள்ளீர்கள்."
+      }
     },
     {
       "statusId": 9,
-      "description": "You have answered the question but marked it for review."
+      "description": {
+        "en": "You have answered the question but marked it for review.",
+        "ta": "நீங்கள் கேள்விக்கு பதிலளித்துள்ளீர்கள், ஆனால் அதை மதிப்பீட்டுக்காக குறித்துள்ளீர்கள்."
+      }
     }
   ],
   "reviewNote": {
-    "text": "The Marked for Review status simply acts as a reminder that you have set to look at the question again. If an answer is selected for a question that is Marked for Review, the answer will be considered in the final evaluation.",
+    "text": {
+        "en": "The Marked for Review status simply acts as a reminder that you have set to look at the question again. If an answer is selected for a question that is Marked for Review, the answer will be considered in the final evaluation.",
+        "ta": "மதிப்பீட்டுக்காக குறிக்கப்பட்ட நிலை, நீங்கள் கேள்வியை மீண்டும் பார்க்க அமைத்துள்ளீர்கள் என்பதை நினைவூட்டுவதற்காக செயல்படுகிறது. மதிப்பீட்டுக்காக குறிக்கப்பட்ட கேள்விக்கு ஒரு பதில் தேர்ந்தெடுக்கப்பட்டால், அந்த பதில் இறுதித் தணிக்கையில் எடுத்துக்கொள்ளப்படும்."
+      },
     "colorClass": "text-red-500"
   },
   "navigationInstructions": [
     {
       "number": 4,
-      "instruction": "To select a question to answer, you can do one of the following:"
+      "instruction": {
+        "en": "To select a question to answer, you can do one of the following:",
+        "ta": "ஒரு கேள்வியை தேர்ந்தெடுத்து பதிலளிக்க, நீங்கள் பின்வருபவைகளில் ஒன்றை செய்யலாம்:"
+      }
     },
     {
-      "number": "a",
-      "instruction": "Click on the question number on the question palette at the right of your screen to go to that numbered question directly. Note that using this option does NOT save your answer to the current question."
+      "number": "A",
+      "instruction": {
+        "en": "Click on the question number on the question palette at the right of your screen to go to that numbered question directly. Note that using this option does NOT save your answer to the current question.",
+        "ta": "உங்கள் திரையின் வலது பக்கத்தில் உள்ள கேள்வி பாலெட்டில் உள்ள கேள்வி எண்ணைப் கிளிக் செய்து, குறித்த எண்ணிலுள்ள கேள்விக்குச் நேரடியாக செல்லவும். இந்த விருப்பத்தைப் பயன்படுத்துவது தற்போதைய கேள்விக்கான உங்கள் பதிலை சேமிக்காது என்பதை நினைவில் கொள்ளவும்."
+      }
     },
     {
-      "number": "b",
-      "instruction": "Click on Save and Next to save answer to current question and to go to the next question in sequence."
+      "number": "B",
+      "instruction": {
+        "en": "Click on Save and Next to save answer to current question and to go to the next question in sequence.",
+        "ta": "தற்போதைய கேள்விக்கான பதிலைச் சேமிக்க Save and Next ஐ கிளிக் செய்து, தொடர் வரிசையில் அடுத்த கேள்விக்குச் செல்லவும்."
+      }
     },
     {
-      "number": "c",
-      "instruction": "Click on Mark for Review and Next to save answer to current question, mark it for review, and to go to the next question in sequence."
+      "number": "C",
+      "instruction": {
+        "en": "Click on Mark for Review and Next to save answer to current question, mark it for review, and to go to the next question in sequence.",
+        "ta": "தற்போதைய கேள்விக்கான பதிலைச் சேமிக்க, மதிப்பீட்டுக்காக அதைச் குறிக்க, தொடர் வரிசையில் அடுத்த கேள்விக்குச் செல்ல Mark for Review and Next ஐ கிளிக் செய்யவும்."
+      }
     },
     {
       "number": 5,
-      "instruction": "You can view the entire paper by clicking on the Question Paper button."
+      "instruction": {
+        "en": "You can view the entire paper by clicking on the Question Paper button.",
+        "ta": "Question Paper பொத்தானை கிளிக் செய்து நீங்கள் முழு காகிதத்தையும் காணலாம்."
+      }
     }
   ],
   "answeringInstructions": [
     {
       "number": 6,
-      "instruction": "Answering questions:"
+      "instruction": {
+        "en": "Answering questions:",
+        "ta": "கேள்விகளுக்கு பதிலளித்தல்:"
+      }
     },
     {
       "number": "A",
-      "instruction": "For multiple choice type question:"
+      "instruction": {
+        "en": "For multiple choice type question:",
+        "ta": "பல்தேர்வு வகை கேள்விக்கு:"
+      }
     },
     {
       "number": "B",
-      "instruction": "To select your answer, click on one of the option buttons."
+      "instruction": {
+        "en": "To select your answer, click on one of the option buttons.",
+        "ta": "உங்கள் பதிலைத் தேர்ந்தெடுக்க, விருப்ப பொத்தான்களில் ஒன்றைக் கிளிக் செய்யவும்."
+      }
     },
     {
       "number": "C",
-      "instruction": "To change your answer, click the another desired option button."
+      "instruction": {
+        "en": "To change your answer, click the another desired option button.",
+        "ta": "உங்கள் பதிலை மாற்ற, மற்ற விருப்பப் பொத்தானைக் கிளிக் செய்யவும்."
+      }
     },
     {
       "number": "D",
-      "instruction": "To save your answer, you MUST click on Save & Next."
+      "instruction": {
+        "en": "To save your answer, you MUST click on Save & Next.",
+        "ta": "உங்கள் பதிலைச் சேமிக்க, நீங்கள் கட்டாயம் Save & Next ஐ கிளிக் செய்ய வேண்டும்."
+      }
     },
     {
       "number": "E",
-      "instruction": "To deselect a chosen answer, click on the chosen option again or click on the Clear Response button."
+      "instruction": {
+        "en": "To deselect a chosen answer, click on the chosen option again or click on the Clear Response button.",
+        "ta": "தேர்ந்தெடுக்கப்பட்ட பதிலை நீக்க, தேர்ந்தெடுக்கப்பட்ட விருப்பத்தைக் கிளிக் செய்யவும் அல்லது Clear Response பொத்தானைக் கிளிக் செய்யவும்."
+      }
     },
     {
       "number": 7,
-      "instruction": "To mark a question for review click on Mark for Review & Next. If an answer is selected for a question that is Marked for Review, the answer will be considered in the final evaluation."
+      "instruction": {
+        "en": "To mark a question for review click on Mark for Review & Next. If an answer is selected for a question that is Marked for Review, the answer will be considered in the final evaluation.",
+        "ta": "மதிப்பீட்டுக்காக ஒரு கேள்வியை குறிக்க, Mark for Review & Next ஐ கிளிக் செய்யவும். மதிப்பீட்டுக்காக குறிக்கப்பட்ட கேள்விக்கு ஒரு பதில் தேர்ந்தெடுக்கப்பட்டால், அந்த பதில் இறுதித் தணிக்கையில் எடுத்துக்கொள்ளப்படும்."
+      }
     }
   ],
   "agreementStatement": {
-    "text": "I have read and understood the instructions. All Computer Hardwares allotted to me are in proper working condition. I agree that I am not carrying any prohibited gadget like mobile phone etc. / any prohibited material with me into the exam hall. I agree that in case of not adhering to the instructions, I will be disqualified from taking the exam."
+    "text": {
+      "en": "I have read and understood the instructions. All Computer Hardwares allotted to me are in proper working condition. I agree that I am not carrying any prohibited gadget like mobile phone etc. / any prohibited material with me into the exam hall. I agree that in case of not adhering to the instructions, I will be disqualified from taking the exam.",
+      "ta": "நான் வழிமுறைகளைப் படித்து புரிந்துகொண்டேன். எனக்கு ஒதுக்கப்பட்ட அனைத்து கணினி சாதனங்களும் சரியான வேலைநிலையிலுள்ளன. நான் கடமையாக வழிமுறைகளைப் பின்பற்றுவதாகவும், கேள்வி கட்டங்களுக்கான வண்ண வகைகளைப் பயன்படுத்தும் பொத்தான்கள் இந்த முறையில் இருக்கும்: நிலை 1-க்கு சாம்பல், நிலை 3-க்கு சிவப்பு, நிலை 5-க்கு பச்சை, நிலைகள் 7 மற்றும் 9-க்கு ஊதா என ஒதுக்கப்பட்டுள்ளது."
+    }
   }
 }

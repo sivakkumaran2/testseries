@@ -1,5 +1,5 @@
 import React from 'react'
-import Questionandoption from '../../components/Questionandoption'
+import Questionandoption from '../../components/QuestionPaper'
 const page = () => {
   return (
     <div>

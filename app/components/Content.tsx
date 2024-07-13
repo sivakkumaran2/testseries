@@ -4,9 +4,25 @@ import Link from 'next/link';
 import examData from '../data/data.json';
 import { Button } from "@/components/ui/button";
 
-type ContentProps = {
-  language: string;
+type LanguageText = {
+  en: string;
+  ta: string;
 };
+
+
+type ExamData = {
+  examInstructions: { number: number; instruction: LanguageText }[];
+  questionStatuses: { statusId: number; description: LanguageText }[];
+  reviewNote: { text: LanguageText; colorClass: string };
+  navigationInstructions: { number: number; instruction: LanguageText }[];
+  answeringInstructions: { number: number; instruction: LanguageText }[];
+  agreementStatement: { text: LanguageText };
+};
+
+type ContentProps = {
+  language: keyof LanguageText; // Ensure language is either 'en' or 'ta'
+};
+
 const Content: React.FC<ContentProps> = ({ language }) => {
   const {
     examInstructions,
@@ -15,7 +31,7 @@ const Content: React.FC<ContentProps> = ({ language }) => {
     navigationInstructions,
     answeringInstructions,
     agreementStatement
-  } = examData;
+  } = examData as ExamData; // Assert examData to ExamData type
 
   const [agreed, setAgreed] = useState(false);
 
@@ -29,9 +45,11 @@ const Content: React.FC<ContentProps> = ({ language }) => {
         <h2 className="text-sm font-semibold mb-2">Exam Instructions</h2>
         <div>
           {examInstructions.map((item) => (
-            <p key={item.number} className="mb-2">
-              {item.number}. {item.instruction}
-            </p>
+            <div key={item.number} className="mb-2">
+              <label htmlFor={`instruction-${item.number}`} className="text-sm">
+                {item.number}. {item.instruction[language]}
+              </label>
+            </div>
           ))}
         </div>
       </div>
@@ -47,36 +65,34 @@ const Content: React.FC<ContentProps> = ({ language }) => {
                     1
                   </Button>
                 )}
-              {status.statusId === 3 && (
-  <Button
-    size="icon"
-    className="bg-red-500 cursor-not-allowed disabled user-select-none hover:bg-red-500 rounded-t-full rounded-b-md w-10 h-10 flex items-center justify-center text-white"
-  >
-    3
-  </Button>
-)}
-{status.statusId === 5 && (
-  <Button
-    size="icon"
-    className="bg-green-500 cursor-not-allowed disabled user-select-none hover:bg-green-500 rounded-b-full w-10 h-10 flex items-center justify-center text-white"
-    >
-
-    5
-  </Button>
-)}
-
-                {status.statusId === 7  && (
-                  <Button size="icon" className="bg-purple-500 disabled user-select-none hover:bg-purple-500 rounded-full">
-                    {status.statusId}
+                {status.statusId === 3 && (
+                  <Button
+                    size="icon"
+                    className="bg-red-500 cursor-not-allowed disabled user-select-none hover:bg-red-500 rounded-t-full rounded-b-md w-10 h-10 flex items-center justify-center text-white"
+                  >
+                    3
                   </Button>
                 )}
-                 {status.statusId === 9  && (
-                  <Button size="icon" className="bg-yellow-500 disabled user-select-none hover:bg-purple-500 rounded-full">
-                    {status.statusId}
+                {status.statusId === 5 && (
+                  <Button
+                    size="icon"
+                    className="bg-green-500 cursor-not-allowed disabled user-select-none hover:bg-green-500 rounded-b-full w-10 h-10 flex items-center justify-center text-white"
+                  >
+                    5
+                  </Button>
+                )}
+                {status.statusId === 7 && (
+                  <Button size="icon" className="bg-purple-500 disabled user-select-none hover:bg-purple-500 rounded-full">
+                    7
+                  </Button>
+                )}
+                {status.statusId === 9 && (
+                  <Button size="icon" className="bg-yellow-500 disabled user-select-none hover:bg-yellow-500 rounded-full">
+                    9
                   </Button>
                 )}
               </div>
-              <p>{status.description}</p>
+              <p>{status.description[language]}</p>
             </div>
           ))}
         </div>
@@ -84,16 +100,18 @@ const Content: React.FC<ContentProps> = ({ language }) => {
 
       <div className="mb-6">
         <h2 className="text-sm font-semibold mb-2">Review Note</h2>
-        <p className={`text-sm ${reviewNote.colorClass}`}>{reviewNote.text}</p>
+        <p className={`text-sm ${reviewNote.colorClass}`}>{reviewNote.text[language]}</p>
       </div>
 
       <div className="mb-6">
         <h2 className="text-sm font-semibold mb-2">Navigating Questions</h2>
         <div>
           {navigationInstructions.map((item) => (
-            <p key={item.number} className="mb-2">
-              {item.number}. {item.instruction}
-            </p>
+            <div key={item.number} className="mb-2">
+              <label htmlFor={`navigation-${item.number}`} className="text-sm">
+                {item.number}. {item.instruction[language]}
+              </label>
+            </div>
           ))}
         </div>
       </div>
@@ -102,9 +120,11 @@ const Content: React.FC<ContentProps> = ({ language }) => {
         <h2 className="text-sm font-semibold mb-2">Answering Questions</h2>
         <div>
           {answeringInstructions.map((item) => (
-            <p key={item.number} className="mb-2">
-              {item.number}. {item.instruction}
-            </p>
+            <div key={item.number} className="mb-2">
+              <label htmlFor={`answering-${item.number}`} className="text-sm">
+                {item.number}. {item.instruction[language]}
+              </label>
+            </div>
           ))}
         </div>
       </div>
@@ -112,13 +132,12 @@ const Content: React.FC<ContentProps> = ({ language }) => {
       <div className="mb-6">
         <label className="block mb-2">
           <input
-            type="Checkbox"
+            type="checkbox"
             checked={agreed}
             onChange={handleAgreementChange}
-                className="text-sm mr-2 font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-   
+            className="text-sm mr-2 font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
           />
-          {agreementStatement.text}
+          {agreementStatement.text[language]}
         </label>
       </div>
 
