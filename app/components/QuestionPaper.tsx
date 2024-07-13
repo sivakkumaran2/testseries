@@ -8,6 +8,7 @@ import { AiOutlineCheckCircle, AiOutlineCloseCircle } from 'react-icons/ai';
 import data from '../data/data2.json';
 import QuestionNo from './QuestionNo';
 import Subject from './Subject';
+import { Select, SelectTrigger, SelectValue, SelectContent, SelectGroup, SelectLabel, SelectItem } from '@/components/ui/select';
 
 export default function Home() {
   const router = useRouter();
@@ -118,14 +119,21 @@ export default function Home() {
               <Button variant="outline">A+</Button>
               <h2 className="text-sm ml-4">View In: </h2>
               <div className="ml-4"></div>
-              <select className="w-[200px]" onChange={(e) => handleLanguageSwitch(e.target.value)}>
-                <option value="">Select language</option>
-                {languages.map((lang) => (
-                  <option key={lang.code} value={lang.code}>
-                    {lang.name}
-                  </option>
-                ))}
-              </select>
+              <Select onValueChange={handleLanguageSwitch}>
+  <SelectTrigger className="w-[180px]">
+    <SelectValue placeholder="Select a language" />
+  </SelectTrigger>
+  <SelectContent>
+    <SelectGroup>
+      <SelectLabel>Language</SelectLabel>
+      {languages.map((lang) => (
+        <SelectItem key={lang.code} value={lang.code}>
+          {lang.name}
+        </SelectItem>
+      ))}
+    </SelectGroup>
+  </SelectContent>
+</Select>
             </div>
           </div>
 
