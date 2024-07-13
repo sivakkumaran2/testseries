@@ -4,7 +4,10 @@ import Link from 'next/link';
 import examData from '../data/data.json';
 import { Button } from "@/components/ui/button";
 
-const Content: React.FC = () => {
+type ContentProps = {
+  language: string;
+};
+const Content: React.FC<ContentProps> = ({ language }) => {
   const {
     examInstructions,
     questionStatuses,
@@ -44,16 +47,24 @@ const Content: React.FC = () => {
                     1
                   </Button>
                 )}
-                {status.statusId === 3 && (
-                  <Button size="icon" className="bg-red-500 cursor-not-allowed disabled user-select-none hover:bg-red-500 rounded-b-md">
-                    3
-                  </Button>
-                )}
-                {status.statusId === 5 && (
-                  <Button size="icon" className="bg-green-500 disabled user-select-none hover:bg-green-500">
-                    5
-                  </Button>
-                )}
+              {status.statusId === 3 && (
+  <Button
+    size="icon"
+    className="bg-red-500 cursor-not-allowed disabled user-select-none hover:bg-red-500 rounded-t-full rounded-b-md w-10 h-10 flex items-center justify-center text-white"
+  >
+    3
+  </Button>
+)}
+{status.statusId === 5 && (
+  <Button
+    size="icon"
+    className="bg-green-500 cursor-not-allowed disabled user-select-none hover:bg-green-500 rounded-b-full w-10 h-10 flex items-center justify-center text-white"
+    >
+
+    5
+  </Button>
+)}
+
                 {status.statusId === 7  && (
                   <Button size="icon" className="bg-purple-500 disabled user-select-none hover:bg-purple-500 rounded-full">
                     {status.statusId}
@@ -101,10 +112,11 @@ const Content: React.FC = () => {
       <div className="mb-6">
         <label className="block mb-2">
           <input
-            type="checkbox"
+            type="Checkbox"
             checked={agreed}
             onChange={handleAgreementChange}
-            className="mr-2"
+                className="text-sm mr-2 font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+   
           />
           {agreementStatement.text}
         </label>

@@ -1,14 +1,16 @@
-"use client";
-import React, { useState } from 'react';
+import React from 'react';
 import data from '../data/data.json';
 import { Select, SelectTrigger, SelectValue, SelectContent, SelectGroup, SelectLabel, SelectItem } from '@/components/ui/select';
 
-const Language = () => {
-  const [language, setLanguage] = useState('en'); 
+type LanguageProps = {
+  onLanguagesChange: (languagesCode: string) => void; 
+};
+
+const Language: React.FC<LanguageProps> = ({ onLanguagesChange }) => {
   const { languages } = data;
 
-  const handleLanguageSwitch = (languageCode: string) => {
-    setLanguage(languageCode);
+  const handleLanguageSwitch = (languagesCode: string) => {
+    onLanguagesChange(languagesCode);
   };
 
   return (
