@@ -2,7 +2,6 @@
 import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { Button } from '@/components/ui/button';
-import { AiOutlineCheckCircle, AiOutlineCloseCircle } from 'react-icons/ai';
 import data from '../data/data2.json';
 
 export default function Home() {
