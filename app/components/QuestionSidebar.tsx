@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
@@ -34,7 +33,7 @@ const Sidebar: React.FC<SidebarProps> = ({
 
   const handleSubmission = () => {
     setIsSubmitDialogOpen(false);
-    router.push('/instructions/Dashboard/result'); 
+    router.push('/instructions/dashboard/results'); 
   };
 
   const handleCancel = () => {
@@ -119,7 +118,7 @@ const Sidebar: React.FC<SidebarProps> = ({
                 <DialogHeader>
                   <DialogTitle>Edit profile</DialogTitle>
                   <DialogDescription>
-                    Make changes to your profile here. Click save when you're done.
+                    Make changes to your profile here. Click save when you&apos;re done.
                   </DialogDescription>
                 </DialogHeader>
                 <div className="grid gap-4 py-4">
@@ -154,7 +153,7 @@ const Sidebar: React.FC<SidebarProps> = ({
                 <DialogHeader>
                   <DialogTitle>Edit profile</DialogTitle>
                   <DialogDescription>
-                    Make changes to your profile here. Click save when you're done.
+                    Make changes to your profile here. Click save when you&apos;re done.
                   </DialogDescription>
                 </DialogHeader>
                 <div className="grid gap-4 py-4">
@@ -190,7 +189,7 @@ const Sidebar: React.FC<SidebarProps> = ({
                 <DialogHeader>
                   <DialogTitle>Edit profile</DialogTitle>
                   <DialogDescription>
-                    Make changes to your profile here. Click save when you're done.
+                    Make changes to your profile here. Click save when you&apos;re done.
                   </DialogDescription>
                 </DialogHeader>
                 <div className="grid gap-4 py-4">

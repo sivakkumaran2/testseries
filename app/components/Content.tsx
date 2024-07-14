@@ -143,7 +143,7 @@ const Content: React.FC<ContentProps> = ({ language }) => {
 
       <div className="flex justify-center mt-4">
         {agreed ? (
-          <Link href="/instructions/Dashboard">
+          <Link href="/instructions/dashboard">
             <p className="px-4 py-2 bg-blue-500 text-white rounded-md cursor-pointer">
               Next
             </p>

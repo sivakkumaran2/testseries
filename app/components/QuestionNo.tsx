@@ -77,7 +77,7 @@ export default function Home() {
       setTimeLeft((prevTime) => {
         if (prevTime <= 1) {
           clearInterval(timer);
-          router.push('/Dashboard/Result');
+          router.push('/dashboard/Result');
           return 0;
         }
         return prevTime - 1;

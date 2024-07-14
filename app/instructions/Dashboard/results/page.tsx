@@ -1,4 +1,3 @@
-
 import Result from '@/app/components/Result'
 import React from 'react'
 
