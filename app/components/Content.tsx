@@ -20,7 +20,7 @@ type ExamData = {
 };
 
 type ContentProps = {
-  language: keyof LanguageText; // Ensure language is either 'en' or 'ta'
+  language: keyof LanguageText;
 };
 
 const Content: React.FC<ContentProps> = ({ language }) => {
@@ -31,7 +31,7 @@ const Content: React.FC<ContentProps> = ({ language }) => {
     navigationInstructions,
     answeringInstructions,
     agreementStatement
-  } = examData as ExamData; // Assert examData to ExamData type
+  } = examData as ExamData;
 
   const [agreed, setAgreed] = useState(false);
 
